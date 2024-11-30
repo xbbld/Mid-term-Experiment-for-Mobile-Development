@@ -3,7 +3,7 @@
 ### 1. `软件基本功能`
 #### 1.1 `显示时间戳功能`
 #### 1.1.1 `功能展示`
-![Screenshot_20241130_231025_NotePad.jpg](Screenshot_20241130_231025_NotePad.jpg)
+![img_1.png](img_1.png)
 #### 1.1.2 `功能实现`
 在投影中添加用到的项,并对应好项与对应的组件（添加一个text3文本组件来显示时间戳）
 ```properties
@@ -38,8 +38,8 @@ adapter.setViewBinder(new SimpleCursorAdapter.ViewBinder() {
 #### 1.2 `笔记内容搜索功能`
 #### 1.2.1 `功能展示`
 点击显示文本框输入要查询的内容，点击确定后查询
-![Screenshot_20241130_231016_NotePad.jpg](Screenshot_20241130_231016_NotePad.jpg)
-![Screenshot_20241130_231021_NotePad.jpg](Screenshot_20241130_231021_NotePad.jpg)
+![img_2.png](img_2.png)
+![img_3.png](img_3.png)
 #### 1.2.2 `功能实现`
 新建一个menu组件，点击触发文本框，点击确定后触发条件查询
 ```properties
@@ -68,9 +68,8 @@ NotePad.Notes.DEFAULT_SORT_ORDER
 
 #### 2.1 `收藏笔记功能`
 #### 2.1.1 `功能展示`
-![Screenshot_20241130_231231_NotePad.jpg](Screenshot_20241130_231231_NotePad.jpg)
-![Screenshot_20241130_231234_NotePad.jpg](Screenshot_20241130_231234_NotePad.jpg)
-![Screenshot_20241130_231237_NotePad.jpg](Screenshot_20241130_231237_NotePad.jpg)
+![img_4.png](img_4.png)
+![img_5.png](img_5.png)
 #### 2.1.2 `功能实现`
 在NotePadProvider类中为NOTE新增一列NotePad.Notes.COLUMN_NAME_COLLACTION值为1收藏，0不收藏
 ```properties  
@@ -129,7 +128,7 @@ NotePad.Notes.DEFAULT_SORT_ORDER  // Use the default sort order.
 
 #### 2.2 `笔记展开收起功能`
 #### 2.2.1 `功能展示`
-![Screenshot_20241130_231356_NotePad.jpg](Screenshot_20241130_231356_NotePad.jpg)
+![img_6.png](img_6.png)
 #### 2.2.2 `功能实现`
 在NotePadProvider类中为NOTE新增一列NotePad.Notes.COLUMN_NAME_UNFOLD值为1展开，0收起
 代码如2.1.2所示
