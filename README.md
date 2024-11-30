@@ -1,30 +1,23 @@
-## 配置详情
+## 移动软件开发期中实验
 
-### 1. `使用JDK9的版本`
+### 1. `软件展示`
+#### 1.1 '显示时间戳功能'
+#### 1.1.1 '功能展示'
+![001.jpg](001.jpg)
+#### 1.1.2 '功能实现'
+
+#### 1.2 '笔记内容搜索功能'
+#### 1.2.1 '功能展示'
+
+
 
 ### 2. `gradle-wrapper.properties`
 
-请使用以下配置的 `distributionUrl`：
-
-![Alt Text](./001.png)
-
-```properties
-distributionUrl=https\://services.gradle.org/distributions/gradle-6.7.1-bin.zip
-```
-
 ### 3.  `build.gradle(notepad)`
-classpath请使用3.4.0:
-
-![Alt Text](./002.png)
-
-```properties
-classpath="com.android.tools.build:gradle:3.4.0"
-```
 ### 4. `build成功之后`
 #### 4.1 `Error:Execution failed for task ':app:packageDebug'... 出现这个报错`
 build.gradle（:app）中的 android{ ... } 中 添加：
 
-![Alt Text](./003.png)
 
 ```properties
 packagingOptions {
@@ -43,4 +36,3 @@ packagingOptions {
 #### 4.2 `com.android.ide.common.signing.KeytoolException: Failed to read key AndroidDebugKey from store出现这个问题`
 请删除以下两个文件并clean build之后rebuild（此文件的地址请看报错信息）:
 
-![Alt Text](./004.png)
