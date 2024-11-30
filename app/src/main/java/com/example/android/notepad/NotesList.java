@@ -735,7 +735,6 @@ public class NotesList extends ListActivity {
         if (cursor != null && !cursor.isClosed()) {
             id = cursor.getLong(cursor.getColumnIndexOrThrow(NotePad.Notes._ID));
         }
-        // 切换 COLLACTION 值
         ContentValues values = new ContentValues();
         int currentUNFOLD = cursor.getInt(cursor.getColumnIndexOrThrow(NotePad.Notes.COLUMN_NAME_UNFOLD));
         values.put(NotePad.Notes.COLUMN_NAME_UNFOLD, currentUNFOLD == 1 ? 0 : 1);
